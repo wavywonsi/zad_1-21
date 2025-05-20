@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wybór Koloru</title>
+</head>
+<body>
+
+<h3 style="color:green;">MENU:</h3>
+<p style="color:red;">1- CZERWONY</p>
+<p style="color:blue;">2- NIEBIESKI</p>
+
+<input type="button" name="Wąsikowski" value="Oblicz" onclick="fun_was()" /> 
+  <script> 
+    function fun_was() { 
+      var x_was = prompt("Podaj kolor", ""); 
+        if(x_was == 1 || x_was.toLowerCase() == "czerwony") { 
+  document.write('<h1 style="color:red;">wczytałeś kolor czerwony</h1><br />'); } 
+        else if(x_was == 2 || x_was.toLowerCase() == "niebieski") { 
+  document.write('<h6 style="color:blue;">wczytałeś kolor niebieski </h6><br />'); 
+  } 
+  } 
+ </script> 
