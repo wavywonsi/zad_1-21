@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 56 - Wąsikowski</title>
+</head>
+
+<body>
+    <div style="font-size:18px; color:black;">
+        <script>
+            function czyPierwsza_was(n_was) {
+                if (n_was < 2) return false;
+                for (var dzielnik_was = 2; dzielnik_was <= Math.sqrt(n_was); dzielnik_was++) {
+                    if (n_was % dzielnik_was == 0) return false;
+                }
+                return true;
+            }
+
+            var licznik_was = 0;
+            for (var i_was = 0; i_was <= 39; i_was++) {
+                var w_was = i_was * i_was + i_was + 41;
+                if (czyPierwsza_was(w_was)) {
+                    document.write("i=" + i_was + " w(" + i_was + ")=" + w_was + "<br>");
+                    licznik_was++;
+                }
+                if (licznik_was % 5 == 0 && licznik_was !== 0) {
+                    confirm("zatwierdz ok");
+                }
+            }
+        </script>
+    </div>
+</body>
+
+</html>

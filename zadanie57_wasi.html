@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 57 - Wąsikowski</title>
+</head>
+
+<body>
+    <div style="font-size:18px; color:black;">
+        <script>
+            var licznik_was = 0;
+            for (var i_was = 15; i_was <= 30; i_was++) {
+                var pierw2_was = Math.sqrt(i_was);
+                var pierw4_was = Math.sqrt(pierw2_was);
+
+                document.write("i=" + i_was +
+                    " pierw_2(" + i_was + ")=" + pierw2_was.toFixed(2) +
+                    " pierw_4(" + i_was + ")=" + pierw4_was.toFixed(2) + "<br>");
+                licznik_was++;
+
+                if (licznik_was % 3 === 0) {
+                    confirm("zatwierdz ok");
+                }
+            }
+        </script>
+    </div>
+</body>
+
+</html>
