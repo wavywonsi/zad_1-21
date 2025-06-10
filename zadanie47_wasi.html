@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 47 - Wąsikowski</title>
+</head>
+
+<body>
+    <div style="color:blue; font-size:35px;">
+        <script>
+            var a_was, b_was, c_was;
+            do {
+                a_was = parseFloat(prompt("Podaj bok a:", ""));
+                b_was = parseFloat(prompt("Podaj bok b:", ""));
+                c_was = parseFloat(prompt("Podaj bok c:", ""));
+            } while (
+                !(a_was > 0 && b_was > 0 && c_was > 0 &&
+                    a_was + b_was > c_was &&
+                    a_was + c_was > b_was &&
+                    b_was + c_was > a_was)
+            );
+
+            document.write("Boki tworzą trójkąt: a=" + a_was + ", b=" + b_was + ", c=" + c_was + "<br>");
+        </script>
+    </div>
+</body>
+
+</html>

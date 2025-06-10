@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 46 - Wąsikowski</title>
+</head>
+
+<body>
+    <div style="color:red; font-size:40px;">
+        <script>
+            var h_was, a_was;
+
+            do {
+                h_was = parseFloat(prompt("Podaj wysokość h:", ""));
+            } while (h_was <= 0);
+
+            do {
+                a_was = parseFloat(prompt("Podaj podstawę a:", ""));
+            } while (!(a_was > 0));
+
+            var pole_was = (a_was * h_was) / 2;
+            document.write("Pole trójkąta = " + pole_was.toFixed(2) + " cm²<br>");
+        </script>
+    </div>
+</body>
+
+</html>
